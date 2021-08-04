@@ -29,44 +29,46 @@
 
 	<body>
 		<div id="bloc_page">
-		<header>
-			<div id="titre_principal">
-							<div id="logo">
-								<img src="image/reservia_logo.png" alt="logo"/>
+			<nav class="sizeNav">
+				<div class="flexBetween">
+							<div>
+								<img class="marglogo" src="image/reservia_logo.png" alt="logo" width="120px" height="50px"/>
 							</div>
-				<nav class="navigation">
-					<ul>
-						<li><a href="#">hébergements</a></li>
-						<li><a href="#">Activités</a></li>
-					</ul>
-					<div class="inscription">
-						<a href="#">S'inscrire</a>
+					<div class="sizeLiens flexAround">
+						<div class="sizeLien flexCentre bordureNav">
+							<a class="colorLien2 decorationNone" href="#">hébergements</a>
+						</div>
+						<div class="sizeLien flexCentre bordureNav">
+							<a class="colorLien2 decorationNone" href="#">Activités</a>
+						</div>
+						<div class="sizeLien flexCentre bordureNav">
+							<a class="texteGras colorBleu decorationNone" href="#">S'inscrire</a>
+						</div> 
 					</div>
-				</nav>
+				</div>
+			</nav>
 
-			<div class="textheader">
-					<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+		<header>
+			<section>
+				<div> 
+					<h1 class="texteGras" >Trouvez votre hébergement pour des vacances de rêve</h1>
 					<P>En plein centre ville ou en pleine nature</P>
-			</div>
+				</div>
+
+			<div class="bordureSearch flexCentre">
+			<div class="backGris flexCentre iconSize">
+				<i class="fas fa-map-marker-alt"></i>
 			</div>
 
-		</header>
-		
-		<section class="1">
-			<div id="localisation">
-			<span class="icone">
-				<i class="fas fa-map-marker-alt"></i>
-			</span>
-			<div class="saisie">
-					<form >
-						<input type="text" id="research" placeholder="Marseille, France"/>
-					</form>
-					<span class="text-button">Rechercher</span>
+			<div>
+				<input class="recherche flexCentre bordureNone paddingSearch" type="search" value="Marseille, France"/></div>
+			<div class="backBleu flexCentre buttonSearch"> Rechercher
 					<i class="fas fa-search"></i>
 			</div>	
 			</div>
+		</header>
 
-			<div class="filtre">
+			<div id="filtre">
 				<h3>Filtre</h3>
 				<div class="filtersresearch">
 					<div class="item">
@@ -202,8 +204,8 @@
 		</section>
 	<!--partie aside du bloc hebergements-->
 			<section id="populaires">
-			<h2> class="entete">Les plus populaires
-			<i class="fas fa-chart-line" aria-hidden="true"></i>
+			<h2 class="introduction">Les plus populaires
+				<i class="fas fa-chart-line" aria-hidden="true"></i>
 			</h2>
 				<article class="hebergementspop">
 					<div class="hotelpop">
