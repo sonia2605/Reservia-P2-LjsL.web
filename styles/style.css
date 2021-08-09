@@ -17,11 +17,13 @@
     height: 100vh;
 }
 
-.bloc_page {
+#bloc_page {
     box-sizing: border-box;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    max-width: 1440px;
+    margin:auto;
+    padding-left: calc(50%-var(--bloc_page)/2);
+    padding-right:calc(50%-var(--bloc_page)/2);  
 }
 
 .flexCentre {
@@ -66,7 +68,9 @@
 }
 .bordureNone {
     border: none;
-}.colorBleu {
+}
+
+.colorBleu {
     color: #0065FC
 }
 
@@ -98,7 +102,7 @@
 .navBar {
     display: flex;
     justify-content: space-between;
-    padding: 12px;
+    padding: 16px;
 }
 
 .navBar ul {
@@ -110,6 +114,7 @@
 .navBar ul li a {
     padding: 30px;
 }
+
 
 .sizeLien {
     height: 99px;
@@ -139,10 +144,10 @@
 }
 
 .marglogo {
-    margin-top: 30px;
+    margin-top:30px;
 }
   
-/* ma header*/
+/* ma header*/ /* ma header*/ /* ma header*/
 .barSearch {
     display:flex;
     justify-content: space-betWeen;
@@ -233,9 +238,6 @@ padding-left: 20px;
         margin: -2px;
     }
 
-    .searchFiltersFilterWrapiconIcon {
-        color: #0065FC;
-    }
     .searchFiltersFilterTitle {
         margin: 0 1rem;
         font-size: bolder;
@@ -264,14 +266,15 @@ padding-left: 20px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 56px;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .titre_hebergements_a_marseille {
     margin: 0px;
-    ;
-    font-size: large;
-    margin-bottom: 21px;
+    font-size: bolder;
+    margin-bottom: 28px;
 }
 
 #hebergements_a_marseille {
@@ -281,8 +284,9 @@ padding-left: 20px;
     justify-content: space-between;
     align-content: space-between;
     border-radius: 20px;
-    padding: 44px 36px 44px 36px;
-    max-width: 805px;
+    padding: 25px 30px 25px 30px;
+    width: 80%;
+    max-width: 840px;
 }
 
 .container_item {
@@ -291,28 +295,30 @@ padding-left: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
 }
 
 .box_carte {
     border: 3px solid white;
     border-radius: 20px;
-    padding: 5px 5px 10px 5px;
+    padding: 5px 5px 5px 5px;
     background-color: white;
-    max-width: 236px;
-    margin-bottom: 28px;
-
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 38px;
+    box-shadow: 10px 25px 25px grey;
 }
 
 .hebergement_image {
+    overflow: hidden;
     padding-left: 5px;
     padding-right: 5px;
+    flex-shrink: 0;
 }
 
 .photo_hebergement {
-    object-fit: cover;
-    width: 236px;
-    height: 112px;
+    width:250px;
+    height: 150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -325,43 +331,39 @@ padding-left: 20px;
 }
 
 .titre_contenu {
-    padding-top: 11px;
-    padding-bottom: 11px;
+    color: black;
 }
 
 .prix_contenu {
-    padding-bottom: 11px;
+    color: black;
 }
 
 .etoiles {
-    padding-bottom: 11px;
+    padding-bottom: 5px;
 }
-
 
 
 /*bloc populaire*/ /*bloc populaire*/
-
-.titre_popularite {
-    display: flex;
-    flex-direction: row;
-}
-
-.titre_les_plus_populaires {
-    font-size: large;
-    margin-bottom: 25px;
-}
-
-.fa-chart-line {
-    color: black;
-}
 
 #containerPop {
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     border-radius: 20px;
-    padding: 45px 38px 31px 45px;
-    max-width: 345px;
+    padding: 30px 30px 30px 30px;
+    width: 80%;
+    max-width: 420px;
+}
+
+.titre_les_plus_populaires {
+    font-size: bolder;
+    margin-bottom: 28px;
+}
+
+.fa-chart-line {
+    color: black;
+    
 }
 
 .hebergement_les_plus_populaires {
@@ -375,7 +377,7 @@ padding-left: 20px;
     border-radius: 20px;
     display: flex;
     background-color: white;
-    padding: 6px 58px 6px 6px;
+    padding: 6px 56px 6px 6px;
     max-width: 284px;
     max-height: 135px;
     margin-bottom: 29px;
@@ -397,10 +399,12 @@ padding-left: 20px;
 
 .titre_populaire_contenu {
     padding-bottom: 14px;
+    color: black;
 }
 
 .prix_populaire_contenu {
     padding-bottom: 30px;
+    color: black;
 }
 
 .etoilespop {
@@ -410,18 +414,19 @@ padding-left: 20px;
 
 /* activites */ /* activites */ /* activites */
 
-#Activités_à_Marseille {
+#ActivitesMarseille {
     background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 60px;
-    max-width: 1350px;
+    width: 80%;
+    max-width: 1300px;
 }
 
 .titre_activites {
     margin-bottom: 27px;
-    font-size: large;
+    font-size: bolder;
 }
 
 .activites {
