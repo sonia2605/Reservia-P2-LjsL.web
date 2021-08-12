@@ -82,6 +82,11 @@
     transform: scale(1.3);
 }
 
+.cible .box_carte:hover {
+    border: 3px solid white;
+    box-shadow: 10px 25px 25px grey;
+}
+
 .colorBleu {
     color: #0065FC
 }
@@ -260,6 +265,7 @@
 .infos {
     display: flex;
     align-items: center;
+    margin-bottom: 28px;
 }
 
 .parentIcon {
@@ -281,16 +287,18 @@
     margin-left: 2rem;
 }
 
-.titre_hebergements_a_marseille {
-    margin: 0px;
-    font-size: bolder;
-    margin-bottom: 1rem;
+.titrehebergements_a_marseille {
+    font-weight: 900;
+    margin-left: 20px;
+    margin-top: auto;
 }
 
 .afficher_plus {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 900;
+    margin-left: 20px;
+    padding-bottom: 30px;
 }
 
 #hebergements_marseille {
@@ -298,10 +306,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 65%;
-    height : 650px;
-    margin-right: 2rem;
-    border-radius: 10px;
+    width: 80%;
+    max-width: 864px;
+    height : 700px;
+    margin-right: 1rem;
+    border-radius: 20px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -311,6 +320,9 @@
     justify-content:space-between;
     align-items:center;
     margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .bloc2hosting {
@@ -318,17 +330,21 @@
     justify-content:space-between;
     align-items:center;
     margin-top: 10px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 .box_carte {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 260px;
     height: auto;
     background-color: white;
-    padding: 1%;
+    padding: 2%;
     border-radius: 20px;
-    box-shadow: 10px 25px 25px grey;
+    box-shadow: 5px 15px 15px grey;
 }
 
 .photo_hebergement {
@@ -341,18 +357,6 @@
     width: 90%;
 }
 
-.titre_contenu {
-    color: black;
-}
-
-.prix_contenu {
-    color: black;
-}
-
-.etoiles {
-    padding-bottom: 0px;
-}
-
 
 /*bloc populaire*/ /*bloc populaire*/
 
@@ -360,8 +364,8 @@
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
-    width: 25%;
-    height: 650px;
+    width: 30%;
+    height: 700px;
     margin-left: 20px;
     border-radius: 10px;
     padding-right: 20px;
@@ -392,6 +396,7 @@
 }
 
 .photo_populaire {
+    float: left;
     width: 150px;
     height: auto;
     border-top-left-radius: 10px;
@@ -407,24 +412,17 @@
 
 .titre_populaire_contenu {
     padding-bottom: 14px;
-    color: black;
 }
 
 .prix_populaire_contenu {
     padding-bottom: 30px;
-    color: black;
-}
-
-.etoilespop {
-    max-width: 94px;
-    max-height: 15px;
 }
 
 /* activites */ /* activites */ /* activites */
 
   
 .cardActivity {
-    width: 96%;
+    width: 95%;
     max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
@@ -436,7 +434,8 @@
 
 .Titre_Activités {
     font-size: large;
-    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-left: 3%;
 }
 
 .titre_photo_activite {
