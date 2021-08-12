@@ -1,4 +1,4 @@
-/*éléments de base*/ /*éléments de base*/ /*éléments de base*/
+
 @font-face {
     font-family: 'ralewayregular';
     src: url('raleway-regular-webfont.eot');
@@ -32,36 +32,11 @@
     align-items: center;
 }
 
-.flexAround {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .flexBetween {
     display: flex;
     justify-content:space-between;
     align-items:center;
 }
-
-.flexColumnCentre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.flexColumnAround {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.flexColumnBetween {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 
 .decorationNone {
     text-decoration: none;
@@ -152,6 +127,7 @@
 .slogan {
     width: auto;
     height: 100px;
+    margin-left: 2rem;
     padding: 0 6PX;
 }
 
@@ -172,12 +148,14 @@
     margin-top:2rem;
     width: 120px;
     height: 50px;
+    margin-left: 2rem;
 }
   
 /* ma header*/ /* ma header*/ /* ma header*/
 .barSearch {
     display:flex;
     justify-content: space-betWeen;
+    margin-left: 2rem;
 }
 .bordureSearch {
     width: 460px;
@@ -226,6 +204,7 @@
     margin-top: 50px;
     margin-bottom: 20px;
     flex-wrap: wrap;
+    margin-left: 2rem;
 }
 .searchFiltersTitle {
     margin: 0 2rem 1rem 0;
@@ -283,8 +262,8 @@
     height: 20px;
     border: 2px solid #f2f2f2;
     border-radius: 25px;
-    margin-right: 20px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 2rem;
 }
 
 /* Hébergements*/ /* Hébergements*/
@@ -582,7 +561,7 @@
 }
 
 .margeBlocFoot1 {
-margin-left: 2rem;
+margin-left: 4rem;
 }
 
 .margeBlocFoot3 {
