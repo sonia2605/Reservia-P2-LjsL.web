@@ -87,6 +87,10 @@
     box-shadow: 10px 25px 25px grey;
 }
 
+.target .box_populaire_carte:hover {
+    border: 2px solid white;
+    box-shadow: 10px 20px 20px grey;
+}
 
 .colorBleu {
     color: #0065FC
