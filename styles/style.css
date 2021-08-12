@@ -22,8 +22,8 @@
     width: 100%;
     max-width: 1440px;
     margin:auto;
-    padding-left: calc(50%-var(--bloc_page)/2);
-    padding-right:calc(50%-var(--bloc_page)/2);  
+    padding-left: calc(50%-var(--bloc_page)/2)
+    padding-right:calc(50%-var(--bloc_page)/2)
 }
 
 .flexCentre {
@@ -211,7 +211,7 @@
     margin-left: 0.1rem;
     display: flex;
     align-items: center;
-    font-size: bolder;
+    font-weight: bolder;
 }
 .searchFiltersFilter {
     display: flex;
@@ -246,7 +246,7 @@
 
     .searchFiltersFilterTitle {
     margin: 0 1rem;
-    font-size: bolder;
+    font-weight: bolder;
     }
  
 
@@ -363,7 +363,7 @@
 }
 
 .titre_les_plus_populaires {
-    font-size: bolder;
+    font-weight: bold;
     margin-bottom: 28px;
 }
 
@@ -388,7 +388,6 @@
 .photo_populaire {
     display: flex;
     display: block;
-    margin-left: none;
     width: 35%;
     height: 160px;
     object-fit: cover;
@@ -415,13 +414,13 @@
 }
 
 .Titre_Activités {
-    font-size: large;
+    font-weight: 900;
     margin-top: 4rem;
     margin-left: 3%;
 }
 
 .titre_photo_activite {
-    font-size: bolder;
+    font-weight: bolder;
     margin-left: 1.8rem;
 }
 
@@ -478,7 +477,6 @@
     flex-direction: column;
     border-radius: 30px;
     box-shadow: 1px 1px 12px #f2f2f2;
-    padding: 0px -5px 0px 0px;
     text-decoration: none;
 }
 
