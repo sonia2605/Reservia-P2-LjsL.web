@@ -87,6 +87,7 @@
     box-shadow: 10px 25px 25px grey;
 }
 
+
 .colorBleu {
     color: #0065FC
 }
@@ -365,9 +366,10 @@
     flex-direction: column;
     background-color: #f2f2f2;
     width: 30%;
+    max-width: 576px;
     height: 700px;
     margin-left: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -379,43 +381,35 @@
 
 .fa-chart-line {
     color: black;
-    padding-left: 4.9rem;
-    
+    position: absolute;
+    right: 5%;
 }
 
 .box_populaire_carte {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width:99%;
-    height: auto;
     background-color: white;
     border-radius: 20px;
-    padding: 1px;
-    box-shadow: 5px 5px 15px #f2f2f2;
+    margin-bottom: 6%;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 5px;
 }
 
 .photo_populaire {
-    float: left;
-    width: 150px;
-    height: auto;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    display: flex;
+    display: block;
+    margin-left: none;
+    width: 35%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
 }
 
 .hebergement_populaire_contenu {
-    padding: 7px 0px 7px 7px;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.titre_populaire_contenu {
-    padding-bottom: 14px;
-}
-
-.prix_populaire_contenu {
-    padding-bottom: 30px;
+    width: 60%;
+    padding-left: 5%;
 }
 
 /* activites */ /* activites */ /* activites */
@@ -434,7 +428,7 @@
 
 .Titre_Activités {
     font-size: large;
-    margin-top: 3rem;
+    margin-top: 4rem;
     margin-left: 3%;
 }
 
