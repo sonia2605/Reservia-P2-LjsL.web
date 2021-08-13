@@ -23,7 +23,7 @@
     max-width: 1440px;
     margin:auto;
     padding-left: calc(50%-var(--bloc_page)/2)
-    padding-right:calc(50%-var(--bloc_page)/2)
+    padding-right: calc(50%-var(--bloc_page)/2)
 }
 
 .flexCentre {
@@ -551,6 +551,8 @@
 .footer {
     height: 300px;
     margin-top: 100px;
+    color: black;
+    
 }
 
 .sizeBlocFoot {
