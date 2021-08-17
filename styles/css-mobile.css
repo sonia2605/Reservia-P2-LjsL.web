@@ -705,7 +705,17 @@ margin-right: 15%;
         height: 200px;
     }
     
+    .footerContenu {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
     
+    .margeBlocFoot1 {
+        margin-left: 0%;
+        margin-bottom: 20px;
+    }
 
 
 
