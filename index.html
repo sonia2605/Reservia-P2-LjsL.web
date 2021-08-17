@@ -24,39 +24,45 @@
 			<meta property="twitter:description" content="Reservia, hébergements pour des vacances de rêve">
 			<meta property="twitter:image" content="https://reservia.sonia2605.com/image/reservia_banner.png">
 
-			<link rel="stylesheet" href="styles/style.css">
+			<link rel="stylesheet" href="styles/css-mobile.css">
 			<script src="https://kit.fontawesome.com/d2327940c8.js" crossorigin="anonymous" defer></script>	
 		</head> 
 
 	<body>
 		<div id="bloc_page">	
-<!--nav-->	<!--nav-->	<!--nav-->  <!--nav-->
+
+<!--ma navigation -->
+
 		<nav>
 			<div class="navBar">
 				<div>
-				<img class="marglogo" src="image/reservia_logo.png" alt="reservia">
+				<img class="logo" src="image/reservia_logo.png" alt="reservia">
 				</div>
-				<div class="sizeLien">
+				<div class= "alignement">
+					<div>
 					<ul>
-							<li><a class="bordureNav colorLien2 decorationNone" href="#">Hébergements</a></li>
-							<li><a class="bordureNav colorLien2 decorationNone" href="#">Activités</a></li>
-							<li><a class="bordureNav bold colorBleu decorationNone" href="#">S'inscrire</a></li>
-					</ul> 		
+							<li><a class="bordureNav lienNav decorationNone" href="#">Hébergements</a></li>
+							<li><a class="bordureNav lienNav decorationNone" href="#">Activités</a></li>
+					</ul>
+					</div>
+					<div>
+							<a class="bordureNav inscription" href="#">s'inscrire</a>
+					</div>
 				</div>
 			</div>
 		</nav>
 
-<!--ma header--> <!--ma header--> <!--ma header--> <!--ma header-->
+<!--ma header-->
 
 <header>
 			<div class="slogan">
-			<h2 class="bold">
+			<h2 class="titreslogan">
 				Trouvez votre hébergement pour des vacances de rêve</h2>
 				<P class="txtSlogan">En plein centre ville ou en pleine nature</P>
 			</div>
 
 			<div class="bordureSearch barSearch">
-				<div class="backGris iconSize">
+				<div class="backGris icone">
 					<i class="fas fa-map-marker-alt"></i>
 				</div>
 				<div><input class="recherche bordureNone paddingSearch"
@@ -64,10 +70,11 @@
 							value="Marseille, France"/></div>
 				<div class="backBleu buttonSearch"><strong>Rechercher</strong></div>
 			</div>
-<!-- filtres-->
+
+<!-- les filtres-->
 
 	<div class="Filters">
-		<h2 class="searchFiltersTitle"> Filtres</h2>
+		<h2 class="searchFiltersTitle">Filtres</h2>
 
 		<div class="searchFiltersFilter">
 			<div class="searchFiltersFilterWrapicon">
@@ -95,7 +102,8 @@
 			<i class="fas fa-dog fa-lg colorBleu"></i>
 			</div>
 			<span class="searchFiltersFilterTitle">Animaux autorisés</span>
-		</div>
+		</div>	
+
 	</div>
 				
 		<div class ="infos">
@@ -237,7 +245,7 @@
 
 		<div id="containerPop">
 			<h2 class="titre_les_plus_populaires colorLien2">Les plus populaires
-			<i class="fas fa-chart-line"></i></h2>
+						<i class="fas fa-chart-line"></i></h2>
 
 			<div class="hebergement_les_plus_populaires target"> 
 
@@ -350,7 +358,7 @@
 	<!--mon pied de page-->
 
 		<footer>
-				<div class="footer backGris flexBetween">
+				<div class="footerContenu backGris flexBetween">
 					<div class="margeBlocFoot1 sizeBlocFoot">
 					<h3>A propos</h3>
 					<a href="#" style="text-decoration: none;"><P class="colorLien2">Fonctionnement du site</P></a>
