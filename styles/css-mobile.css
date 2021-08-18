@@ -380,14 +380,14 @@
 }
 
 .titre_les_plus_populaires {
-    font-weight: bold;
-    margin-top: 28px;
-    margin-bottom: 28px;
-    margin-left: 4%;
-    margin-right: 4%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.3rem;
+    font-weight: 900;
 }
 
 .fa-chart-line {
@@ -612,7 +612,7 @@ margin-right: 15%;
     }
 
     .titre_les_plus_populaires {
-        margin: 5% 0 5% 0;
+        white-space: nowrap;
     }
 }
 
@@ -626,6 +626,7 @@ margin-right: 15%;
        
         #hebergement {
             flex-direction: column-reverse; 
+            width: 100%;
         }        
 
         #containerPop {
@@ -643,12 +644,13 @@ margin-right: 15%;
             margin-bottom: 5%;
             padding: 2px;
         }
-
  
     }
 
 @media screen and (max-width: 770px) {
     .navBar {
+        width: 90%;
+        /* c ok la width */
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -665,6 +667,8 @@ margin-right: 15%;
     }
 
     .lienNav {
+        margin-left: 20%;
+        /* margin-left cok */
         width: 100%;
         padding: none;
         margin: none;
@@ -676,27 +680,57 @@ margin-right: 15%;
         margin-right: 0%;
         margin-top: 50px;
         padding: 5%;
+        background-color: white;
     }
 
     .bloc1hosting {
         flex-direction: column;
         margin-bottom: 0;
+
     }
 
     .bloc2hosting {
         flex-direction: column;
-        margin-bottom: 0;
+        margin-top: 0;
     }
+
+    .box_carte {
+        margin-bottom: 20px;
+        min-height: auto;
+        width: 360px;
+        box-shadow: 5px 5px 5px #f2f2f2;
+    }
+    .photo_hebergement {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .titrehebergements_a_marseille {
+        font-size: 1.4rem;
+        white-space: nowrap;
+        margin-left: 0;
+    }
+
+    .afficher_plus {
+        font-size: 1rem;
+        margin-top: 0%;
+        margin-left: 0%;
+        padding-bottom: 0px;
+
+    }
+    
 
     .cardActivity {
         flex-direction: column;
         height: auto;
         margin-bottom: 20px;
     }
+   
 
     .Titre_Activités {
         font-weight: 900;
         font-size: 1.4em;
+        margin-top: 10px;
     }
 
     .titre_photo_activite {

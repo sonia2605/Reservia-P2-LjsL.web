@@ -35,20 +35,21 @@
 
 		<nav>
 			<div class="navBar">
-				<div>
-				<img class="logo" src="image/reservia_logo.png" alt="reservia">
-				</div>
-				<div class= "alignement">
 					<div>
-					<ul>
-							<li><a class="bordureNav lienNav decorationNone" href="#">Hébergements</a></li>
-							<li><a class="bordureNav lienNav decorationNone" href="#">Activités</a></li>
-					</ul>
+						<img class="logo" src="image/reservia_logo.png" alt="reservia">
 					</div>
-					<div>
-							<a class="bordureNav inscription" href="#">s'inscrire</a>
-					</div>
-				</div>
+
+	<!--pour la responsive-->
+					<div class="lienactivitehebergement">
+						<div class="flexCentre">
+							<a class="bordureNav lienNav navMob decorationNone" href="#">Hébergements</a></div>
+						<div class="flexCentre">
+							<a class="bordureNav lienNav navMob decorationNone" href="#">Activités</a></div>
+					</div>	
+							<div class="flexCentre">
+							<a class="bordureNav inscription" href="#">s'inscrire</a></div>
+
+
 			</div>
 		</nav>
 
@@ -73,8 +74,8 @@
 
 <!-- les filtres-->
 
-	<div class="Filters">
-		<h2 class="searchFiltersTitle">Filtres</h2>
+	<div class="Filters mobilefilter">
+		<h2 class="FiltersTitle">Filtres</h2>
 
 		<div class="searchFiltersFilter">
 			<div class="searchFiltersFilterWrapicon">
@@ -244,8 +245,8 @@
 	<!--partie les + populaires-->
 
 		<div id="containerPop">
-			<h2 class="titre_les_plus_populaires colorLien2">Les plus populaires
-						<i class="fas fa-chart-line"></i></h2>
+		<h2 class="titre_les_plus_populaires colorLien2">Les plus populaires
+				<i class="fas fa-chart-line"></i></h2>
 
 			<div class="hebergement_les_plus_populaires target"> 
 
