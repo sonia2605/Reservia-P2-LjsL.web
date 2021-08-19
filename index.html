@@ -31,27 +31,24 @@
 	<body>
 		<div id="bloc_page">	
 
-<!--ma navigation -->
-
-		<nav>
-			<div class="navBar">
-					<div>
+<!--ma header navigation-->
+<header>
+		<div class="navBar">
+					<div id="logo-reservia">
 						<img class="logo" src="image/reservia_logo.png" alt="reservia">
 					</div>
 
-	<!--pour la responsive-->
-					<div class="lienactivitehebergement">
-						<div class="flexCentre">
-							<a class="bordureNav lienNav navMob decorationNone" href="#">Hébergements</a></div>
-						<div class="flexCentre">
-							<a class="bordureNav lienNav navMob decorationNone" href="#">Activités</a></div>
-					</div>	
-							<div class="flexCentre">
-							<a class="bordureNav inscription" href="#">s'inscrire</a></div>
-
-
-			</div>
-		</nav>
+					<nav class="navigation">
+						<ul>
+							<li><a href="#">Hébergements</a></li>
+							<li><a href="#">Activités</a></li>
+						</ul>	
+							<div class="inscription">
+							<a href="#">s'inscrire</a>
+							</div>
+					</nav>
+		</div>
+</header>
 
 <!--ma header-->
 
@@ -62,14 +59,16 @@
 				<P class="txtSlogan">En plein centre ville ou en pleine nature</P>
 			</div>
 
-			<div class="bordureSearch barSearch">
+			<div class="barSearch">
 				<div class="backGris icone">
 					<i class="fas fa-map-marker-alt"></i>
 				</div>
-				<div><input class="recherche bordureNone paddingSearch"
+				<div><input class="recherche bordureNone"
 							type="search"
 							value="Marseille, France"/></div>
-				<div class="backBleu buttonSearch"><strong>Rechercher</strong></div>
+				<div class="buttonSearch">
+					<span class="mobileNone"><strong>Rechercher</strong></span>
+					<span class="desktopNone"><i class="fas fa-search"></i>︁</span></div>
 			</div>
 
 <!-- les filtres-->

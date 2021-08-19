@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 
-}
 @font-face {
     font-family: 'ralewayregular';
     src: url('raleway-regular-webfont.eot');
@@ -8,7 +8,7 @@
          url('raleway-regular-webfont.woff') format('woff'),
          url('raleway-regular-webfont.ttf') format('truetype'),
          url('raleway-regular-webfont.svg#ralewayregular') format('svg');
-    font-weight: large;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -23,6 +23,7 @@
     flex: 1 0 auto;
     margin: 0;
     padding: 0;
+    width: auto;
 }
 
 .flexCentre {
@@ -98,34 +99,19 @@
     color:black;
 }
 
-
-/* Nav */  /*Nav*/  /*Nav*/  /*Nav*/
+/* ma navigation */
 .navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
-    width: 100%;
+    flex-direction: row;
     height: 100px;
+    width: auto;
 }
 
 .navigation {
     display: flex;
-    width: 30%;
-}
-
-.lienactivitehebergement {
-    display: flex;
-    justify-content: center;
-    margin-left: 60%;
-}
-
-.lienNav {
-    color: black;
-    font-weight: 900;
-    padding-top: 30px;
-    padding-right: 18px;
-    padding-left: 18px;
+    margin-right: 3%;
 }
 
 .logo {
@@ -134,25 +120,47 @@
     margin-left: 2rem;
 }
 
-.inscription {
-    border-top:1px solid transparent;
-    color:#0065FC;
-    font-weight: 900;
-    text-decoration: none;   
-    padding: 30px 15px 0px 15px;
-    margin-right: 40px;
-}
-
-.bordureNav {
-    border-top: 1px solid transparent;
-}
-.bordureNav:hover {
-    border-top: 1px solid #0065FC;
-    cursor: pointer;
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
     color: #0065FC;
 }
 
-/* Ma header  avec slogan */
+header ul li a:hover {
+    border-top: 1px solid #0065FC;
+    cursor: pointer;
+    padding-top: 21px;
+    color: #0065FC;
+}
+
+header ul li {
+    margin-left: 28px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.inscription a {
+    color: #0065FC;
+    margin-right: 0%;
+}
+
+.inscription a:hover {
+    border-top: 2px solid #0065FC;
+    padding-top: 21px;
+}
+
+.inscription {
+    padding-left: 28px;
+}
+
+
+/* Ma header  avec slogan et filtres */
 
 .slogan {
     width: auto;
@@ -169,30 +177,22 @@
     font-weight: bolder;
 }
 
-  
-/* ma header*/ /* ma header*/ /* ma header*/
 .barSearch {
     display:flex;
     justify-content: space-betWeen;
     margin-left: 2rem;
-}
-.bordureSearch {
     width: 460px;
     border-radius: 10px;
     border: 0.5px solid #f2f2f2;
 }
 
-.paddingSearch {
-    padding-left: 2rem;
-}
-
 .recherche {
     height: 50px;
     width: 230px;
-    padding-left: 0px;
     font-size: 18px;
     color:black;
     font-weight: bold;
+    padding-left: 20px;
 }
 
 .icone {
@@ -206,17 +206,22 @@
 
 .buttonSearch {
     height: 50px;
-    width: 120px;
+    width: 160px;
     color: white;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
     border: 0.5px solid #f2f2f2;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    background-color: #0065FC;
 }
 
-/* Filtres */ /* Filtres*/ /* Filtres*/
+.desktopNone {
+    display: none;
+}
+
+/* les filtres dans ma header */
 
 .Filters {
     display: flex;
@@ -225,13 +230,15 @@
     margin-bottom: 20px;
     margin-left: 2rem;
 }
+
 .FiltersTitle {
     margin: 0 2rem 1rem 0;
     margin-left: 0.1rem;
     display: flex;
     align-items: center;
-    font-weight: bolder;
+    font-weight: bold;
 }
+
 .searchFiltersFilter {
     display: flex;
     align-items: center;
@@ -242,7 +249,7 @@
     margin-bottom: 1rem;
     cursor: pointer;
     transition-duration: 0.1s;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .searchFiltersFilter:last-child {
@@ -267,10 +274,9 @@
 
     .searchFiltersFilterTitle {
     margin: 0 1rem;
-    font-weight: bolder;
+    font-weight: bold;
     }
  
-
 /* INFOS icone */
 .infos {
     display: flex;
@@ -340,6 +346,7 @@
     margin-right: 15px;
     margin-left: 15px;
 }
+
 .box_carte {
     display: flex;
     flex-direction: column;
@@ -365,8 +372,7 @@
     width: 90%;
 }
 
-
-/*bloc populaire*/ /*bloc populaire*/
+/*bloc populaire*/
 
 #containerPop {
     flex-direction: column;
@@ -392,6 +398,7 @@
 
 .fa-chart-line {
     color: black;
+    margin-left: 2rem;
 }
 
 .box_populaire_carte {
@@ -417,8 +424,7 @@
     padding-left: 5%;
 }
 
-/* activites */ /* activites */ /* activites */
-
+/* le bloc activitees*/
   
 .cardActivity {
     width: 95%;
@@ -562,14 +568,12 @@
     -ms-border-radius: 20px 20px 0px 0px;
 }
 
-
 /* footer*/  /* footer*/ /* footer*/
 
 .footerContenu {
     height: 300px;
     margin-top: 100px;
-    color: black;
-    
+    color: black; 
 }
 
 .sizeBlocFoot {
@@ -592,6 +596,7 @@ margin-right: 15%;
     /*ma navigation en responsive tablette*/
 
     .lienactivitehebergement {
+        width: 60%;
         margin-left: 35%;
     }
     /* bloc hebergement en responsive tablette*/
@@ -616,13 +621,7 @@ margin-right: 15%;
     }
 }
 
-@media  screen and (max-width: 1050px) {
-    /*reponsive des filtres*/
-    
-}
-
-@media screen and (max-width: 990px) {
-    
+@media screen and (max-width: 990px) { 
        
         #hebergement {
             flex-direction: column-reverse; 
@@ -645,48 +644,78 @@ margin-right: 15%;
             padding: 2px;
         }
  
+}
+
+@media (min-width: 300px) and (max-width: 770px) {
+    header {
+        margin: 0;
+        width: 100%;
+        padding-left: 5px;
     }
+
+    .navBar {
+        display: flex;
+        padding-top: 5px;
+    }
+
+    .navigation {
+        margin-right: 0%;
+    }
+
+    .inscription {
+        position: absolute;
+        top: 29px;
+        right: 30px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-top: 2px;
+    }
+    nav ul {
+        border-bottom: 2px solid #f2f2f2;
+    }
+
+    header ul li {
+        margin-left: 0%;
+        padding: 10px 46px 5px 11px;
+    }
+
+    hearder ul li a:hover {
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+        padding-bottom: 5px;
+    }
+
+}
 
 @media screen and (max-width: 770px) {
-    .navBar {
-        width: 90%;
-        /* c ok la width */
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+
+    /* réajustement du slogan en responsive */
+    .titreslogan {
+        font-size: 1.3rem;
     }
-    .navBar ul li a { 
-        flex-wrap: wrap;
-        margin-right: 30px;
+    .txtSlogan {
+        font-size: 1rem;
     }
 
-    .alignement {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-    }
-
-    .lienNav {
-        margin-left: 20%;
-        /* margin-left cok */
-        width: 100%;
-        padding: none;
-        margin: none;
-    }
-
+    /* bloc hébergement en responsive */
     #hebergements_marseille {
         width: 90%;
         height: auto;
         margin-right: 0%;
-        margin-top: 50px;
-        padding: 5%;
+        margin-top: 25px;
+        margin-bottom: 5px;
+        padding: 0%;
         background-color: white;
     }
 
     .bloc1hosting {
         flex-direction: column;
         margin-bottom: 0;
-
     }
 
     .bloc2hosting {
@@ -695,10 +724,12 @@ margin-right: 15%;
     }
 
     .box_carte {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        margin-left: 0%;
+        margin-right: 0%;
         min-height: auto;
         width: 360px;
-        box-shadow: 5px 5px 5px #f2f2f2;
+        box-shadow: 1px 10px 10px #f2f2f2;
     }
     .photo_hebergement {
         object-fit: cover;
@@ -708,7 +739,10 @@ margin-right: 15%;
     .titrehebergements_a_marseille {
         font-size: 1.4rem;
         white-space: nowrap;
-        margin-left: 0;
+        padding-left: 0;
+        margin-left: 0%;
+        margin-bottom: 10px;
+        margin-top: 0px;
     }
 
     .afficher_plus {
@@ -716,17 +750,16 @@ margin-right: 15%;
         margin-top: 0%;
         margin-left: 0%;
         padding-bottom: 0px;
+        margin-bottom: 20px;
 
     }
     
-
     .cardActivity {
         flex-direction: column;
         height: auto;
         margin-bottom: 20px;
     }
    
-
     .Titre_Activités {
         font-weight: 900;
         font-size: 1.4em;
@@ -800,52 +833,67 @@ margin-right: 15%;
     }
 
 }
+
+@media only screen and (max-width: 990px) and (min-width: 460px) {
+    .titre_les_plus_populaires {
+        width: auto;
+        justify-content: space-around;
+    }
+}
+
 @media screen and (max-width: 670px) {
 
     /* Filtres en reponsive mobile*/
+    .Filters {
+        width: 100%;
+        margin-top: 25px;
+    }
+
     .FiltersTitle {
         width: 100%;
     }
     .searchFiltersFilter {
-        margin-right: 1rem;
+        margin-right: 0.9rem;
+        border: 4px solid #f7f7f7;
+    }
+
+    .searchFiltersFilterTitle {
+        font-size: 0.7rem;
+    }
+
+    .infos {
+        width: 100%;
+        font-size: 0.9rem;
     }
 }
 
-
-
-/* tout le bas c'est ok */
 @media screen and (max-width: 600px) {
-    .alignement {
-        order: 1;
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .navMob {
-        width: 50%;
-        border-top: 0;
-        border-bottom: 5px solid #f2f2f2;
-    }
-    .navMob:hover {
-        border-top: 0;
-        border-bottom: 5px solid #0065FC;
-    }
-
-    .navBar {
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
     
-    .logo {
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
+    /* responsive de ma barre de recherche */
+
+    .barSearch {
+        width: 300px;
+        border: none;
     }
 
+    .recherche {
+        width: 200px;
+        border-top: 1px solid #f2f2f2;
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    .buttonSearch {
+        width: 50px;
+        border-radius: 10px;
+    }
+    .desktopNone {
+        display: block;
+    }
+
+    .mobileNone {
+        display: none;
+    }
+    .titre_les_plus_populaires {
+        width: 100%;
+    }
 }
-
-
-
-
-    
