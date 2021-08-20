@@ -8,7 +8,7 @@
          url('raleway-regular-webfont.woff') format('woff'),
          url('raleway-regular-webfont.ttf') format('truetype'),
          url('raleway-regular-webfont.svg#ralewayregular') format('svg');
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -23,7 +23,7 @@
     flex: 1 0 auto;
     margin: 0;
     padding: 0;
-    width: 98%;
+    width: auto;
 }
 
 .flexCentre {
@@ -118,23 +118,13 @@
     margin-left: 60%;
 }
 
-.navBar ul {
-    display:flex;
-    align-items: center;
-    list-style-type: none;
-}
-
-.navBar ul li a {
-    padding: 30px;
-}
-
 .sizeLien {
     width: 140px;
     height: 99px;
 }
 
 .inscription {
-    font-weight: 600;
+    font-weight: 900;
     color: #0065FC;
     text-decoration: none;
 }
@@ -151,6 +141,7 @@
 .logo {
         width: 120px;
         height: 50px;
+        margin-left: 2rem;
     }
 
 /* Ma header  avec slogan et filtres */
@@ -382,7 +373,6 @@
     padding-right: 20px;
     padding-left: 20px;
 }
-
 .titre_les_plus_populaires {
     display: flex;
     justify-content: space-between;
@@ -396,7 +386,6 @@
 
 .fa-chart-line {
     color: black;
-    margin-left: 2rem;
 }
 
 .box_populaire_carte {
@@ -566,7 +555,7 @@
     -ms-border-radius: 20px 20px 0px 0px;
 }
 
-/* footer*/  /* footer*/ /* footer*/
+/* le pied de page */
 
 .footerContenu {
     height: 300px;
@@ -581,10 +570,6 @@
     font-size: 1rem;
 }
 
-h3 {
-    font-size: 1.3rem;
-    font-family: 'Raleway';
-}
 .margeBlocFoot1 {
 margin-left: 4rem;
 }
@@ -595,13 +580,12 @@ margin-right: 15%;
 
 /* mise en place des médias queries pour ma responsive */
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1295px) {
 
     /*ma navigation en responsive tablette*/
 .sizeLien12 {
     margin-left: 35%;
 }
-
     /* bloc hebergement en responsive tablette*/
 
     .box_populaire_carte {
@@ -628,7 +612,6 @@ margin-right: 15%;
        
         #hebergement {
             flex-direction: column-reverse; 
-            width: 100%;
         }        
 
         #containerPop {
@@ -646,6 +629,9 @@ margin-right: 15%;
             margin-bottom: 5%;
             padding: 2px;
         }
+        .titre_les_plus_populaires {
+            width: 50%;
+        }
  
 }
 
@@ -659,12 +645,17 @@ margin-right: 15%;
 
     /* réajustement du slogan en responsive */
 .titreslogan {
+    font-weight: bolder;
     font-size: 1.3rem;
     }
- .txtSlogan {
+.txtSlogan {
     font-size: 1rem;
  }
-
+ /* changement de la police pour mobile */
+.size {
+    font-size: 1rem;
+    margin-right: 2rem;
+}
     /* bloc hébergement en responsive */
     #hebergements_marseille {
         width: 90%;
@@ -785,6 +776,7 @@ margin-right: 15%;
     .margeBlocFoot1 {
         margin-top: 20px;
         margin-left: 0%;
+        margin-bottom: 20px;
     }
 
     .margeBlocFoot3 {
@@ -796,15 +788,29 @@ margin-right: 15%;
     }
 
 }
+@media screen and (min-width: 540px) and (max-width: 770px) {
+    .titrehebergements_a_marseille {
+        font-size: 1.4rem;
+        white-space: nowrap;
+        padding-left: 0;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
 
-@media only screen and (max-width: 990px) and (min-width: 460px) {
-    .titre_les_plus_populaires {
-        width: auto;
-        justify-content: space-around;
+    .afficher_plus {
+        font-size: 1rem;
+        margin-top: 0%;
+        margin-left: 50px;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 670px) {
+    .titre_les_plus_populaires {
+        width: 70%;
+    }
 
     /* Filtres en reponsive mobile*/
     .Filters {
@@ -879,8 +885,10 @@ border-bottom: 3px solid #F2F2F2;
     .mobileNone {
         display: none;
     }
+
     .titre_les_plus_populaires {
-        width: 100%;
+        width: 96%;
+
     }
 }
 
