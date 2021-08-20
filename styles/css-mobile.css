@@ -8,7 +8,7 @@
          url('raleway-regular-webfont.woff') format('woff'),
          url('raleway-regular-webfont.ttf') format('truetype'),
          url('raleway-regular-webfont.svg#ralewayregular') format('svg');
-    font-weight: 600;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -23,7 +23,7 @@
     flex: 1 0 auto;
     margin: 0;
     padding: 0;
-    width: auto;
+    width: 98%;
 }
 
 .flexCentre {
@@ -100,65 +100,58 @@
 }
 
 /* ma navigation */
+.sizeNav {
+    height: 100px;
+}
+
 .navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-    height: 100px;
-    width: auto;
 }
 
-.navigation {
-    display: flex;
-    margin-right: 3%;
+.sizeLiens {
+    width: 100%;
 }
 
-.logo {
-    width: 120px;
-    height: 50px;
-    margin-left: 2rem;
+.sizeLien12 {
+    margin-left: 60%;
 }
 
-header ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-left: auto;
-    color: #0065FC;
+.navBar ul {
+    display:flex;
+    align-items: center;
+    list-style-type: none;
 }
 
-header ul li a:hover {
-    border-top: 1px solid #0065FC;
-    cursor: pointer;
-    padding-top: 21px;
-    color: #0065FC;
+.navBar ul li a {
+    padding: 30px;
 }
 
-header ul li {
-    margin-left: 28px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.inscription a {
-    color: #0065FC;
-    margin-right: 0%;
-}
-
-.inscription a:hover {
-    border-top: 2px solid #0065FC;
-    padding-top: 21px;
+.sizeLien {
+    width: 140px;
+    height: 99px;
 }
 
 .inscription {
-    padding-left: 28px;
+    font-weight: 600;
+    color: #0065FC;
+    text-decoration: none;
 }
 
+.bordureNav {
+        border-top: 1px solid transparent;
+    }
+.bordureNav:hover {
+        border-top: 1px solid #0065FC;
+        cursor: pointer;
+        color: #0065FC;
+    }
+    
+.logo {
+        width: 120px;
+        height: 50px;
+    }
 
 /* Ma header  avec slogan et filtres */
 
@@ -170,11 +163,12 @@ a {
 }
 
 .txtSlogan {
-    font-size: 1.1em;
+    font-size: 1em;
+    font-family: 'Ralewayregular';
 }
 
 .titreslogan {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .barSearch {
@@ -202,6 +196,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.size {
+    font-family: 'Ralewayregular';
 }
 
 .buttonSearch {
@@ -579,8 +577,14 @@ a {
 .sizeBlocFoot {
     height: 150px;
     width: 33%;
+    font-family: 'raleway-regular-webfont';
+    font-size: 1rem;
 }
 
+h3 {
+    font-size: 1.3rem;
+    font-family: 'Raleway';
+}
 .margeBlocFoot1 {
 margin-left: 4rem;
 }
@@ -591,14 +595,13 @@ margin-right: 15%;
 
 /* mise en place des médias queries pour ma responsive */
 
-@media screen and (max-width: 1295px) {
+@media screen and (max-width: 1290px) {
 
     /*ma navigation en responsive tablette*/
+.sizeLien12 {
+    margin-left: 35%;
+}
 
-    .lienactivitehebergement {
-        width: 60%;
-        margin-left: 35%;
-    }
     /* bloc hebergement en responsive tablette*/
 
     .box_populaire_carte {
@@ -646,61 +649,21 @@ margin-right: 15%;
  
 }
 
-@media (min-width: 300px) and (max-width: 770px) {
-    header {
-        margin: 0;
-        width: 100%;
-        padding-left: 5px;
-    }
-
-    .navBar {
-        display: flex;
-        padding-top: 5px;
-    }
-
-    .navigation {
-        margin-right: 0%;
-    }
-
-    .inscription {
-        position: absolute;
-        top: 29px;
-        right: 30px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        margin-top: 2px;
-    }
-    nav ul {
-        border-bottom: 2px solid #f2f2f2;
-    }
-
-    header ul li {
-        margin-left: 0%;
-        padding: 10px 46px 5px 11px;
-    }
-
-    hearder ul li a:hover {
-        border-bottom: 2px solid #0065FC;
-        border-top: none;
-        padding-bottom: 5px;
-    }
-
+@media screen and (max-width: 770px) {
+.sizeLiens {
+    width: 90%;
+}
+.sizeLien12 {
+    margin-left: 20%;
 }
 
-@media screen and (max-width: 770px) {
-
     /* réajustement du slogan en responsive */
-    .titreslogan {
-        font-size: 1.3rem;
+.titreslogan {
+    font-size: 1.3rem;
     }
-    .txtSlogan {
-        font-size: 1rem;
-    }
+ .txtSlogan {
+    font-size: 1rem;
+ }
 
     /* bloc hébergement en responsive */
     #hebergements_marseille {
@@ -868,7 +831,30 @@ margin-right: 15%;
 }
 
 @media screen and (max-width: 600px) {
-    
+    /* responsive de la navigation en flex direction row*/
+.sizeNav {
+    height: auto;
+}
+.sizeLien12 {
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+}
+.sizeLienmobile {
+width: 50%;
+border-top: 0;
+border-bottom: 3px solid #F2F2F2;
+}
+  
+.sizeLiens {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sizeLienmobile:hover {
+    border-top: 0;
+    border-bottom: 3px solid #0065FC;
+}
     /* responsive de ma barre de recherche */
 
     .barSearch {
@@ -897,3 +883,6 @@ margin-right: 15%;
         width: 100%;
     }
 }
+
+
+    
