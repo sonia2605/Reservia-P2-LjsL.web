@@ -32,21 +32,21 @@
 		<div id="bloc_page">	
 
 <!--ma header navigation-->
-
+<header>
 <nav class="sizeNav">
 	<div class="sizeLiens navBar">
 					<div id="logo_reservia">
-						<img class="logo"src="image/reservia_logo.png" alt="logo_reservia">
+						<img class="logo" src="image/reservia_logo.png" alt="logo_reservia">
 					</div>
 
 			
 	<!-- div en rajout pour regrouper les 2 éléments-->
 				<div class="sizeLien12 flexCentre">
 				<div class="sizeLien sizeLienmobile flexCentre bordureNav">
-					<a class="colorLien2 decorationNone" href="#">Hébergements</a></div>
+					<a class="colorLien2 decorationNone bold" href="#hebergement">Hébergements</a></div>
 				
 				<div class="sizeLien sizeLienmobile flexCentre bordureNav">
-					<a class="colorLien2 decorationNone" href="#">Activités</a></div>	
+					<a class="colorLien2 decorationNone bold" href="#activites">Activités</a></div>	
 				</div>
 				<div class="sizeLien flexCentre bordureNav">
 					<a class="inscription" href="#">s'inscrire</a></div>
@@ -54,9 +54,6 @@
 	</div>
 </nav>
 
-<!--ma header-->
-
-<header>
 			<div class="slogan">
 			<h2 class="titreslogan">
 				Trouvez votre hébergement pour des vacances de rêve</h2>
@@ -113,14 +110,16 @@
 		<div class ="infos">
 				<div class="parentIcon flexCentre">
 				<i class="fas fa-info fa-xs colorBleu"></i></div>
-				<div class="size"><P>Plus de 500 logements sont disponibles dans cette ville</P></div>
+				<div><P>Plus de 500 logements sont disponibles dans cette ville</P></div>
 				</div>
 
 </header>
 
+
 <!--hebergements à marseille-->
 
-		<main id="hebergement">
+<section>
+		<div id="hebergement">
 		<div id="hebergements_marseille">
 			<h2 class="titrehebergements_a_marseille">Hébergements à Marseille</h2>
 		
@@ -311,12 +310,11 @@
 				</a>
 		</div>
 		</div>
-	</main>
+	</div>
+
 
 			<!--la section activites-->
-<div>
-	<p class="Titre_Activités"><strong>Activités à Marseille</strong></p>
-</div>
+	<h2 class="Titre_Activites" id="activites">Activités à Marseille</h2>
 
 <div class="cardActivity zoom">
 	<div class="card1">
@@ -356,9 +354,8 @@
 		</a>
 	</div>
 </div>
-</div> 
 
-
+</section>
 	<!--mon pied de page-->
 
 		<footer>
@@ -383,5 +380,5 @@
 				</div>
 				</div>
 		</footer>	
+	</div>
 	</body>
-</html>
