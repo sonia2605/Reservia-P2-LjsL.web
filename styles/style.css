@@ -130,12 +130,8 @@ footer {
     margin-left: 2rem;
     padding: 0 6PX;
 }
-.txtSlogan {
-    font-size: 1.1vw;
-}
 .titreslogan {
     font-weight: bold;
-    font-size: 1.8vw;
 }
 .barSearch {
     display:flex;
